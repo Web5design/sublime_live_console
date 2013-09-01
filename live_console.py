@@ -149,7 +149,7 @@ class LiveConsoleCommand(sublime_plugin.WindowCommand):
         elif len(configs) == 1:
             LiveConsole(configs.popitem()[1])
         elif not configs:
-            sublime.status_message('No suitable console configurations found.')
+            sublime.message_dialog('No console configurations found.')
         else:
             console_names = ['%s (%s)' % (v['name'], n)  for n ,v in configs.items()]
             console_names.sort()
