@@ -40,7 +40,7 @@ Open Sublime Text 3's Python Prompt and run the todo load command:
 	CTRL + `
 	Type: window.run_command('live_console')
 
-You can of course also create a key mapping to load the live color schemes page.
+You can of course also create a key mapping to run the live console command.
 
 ## Issues / Suggestions:
 
