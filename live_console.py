@@ -26,7 +26,7 @@ class LiveConsole(LiveView):
         settings.update(config)
         del settings['layout']
         del settings['name']
-        self.apply_settings(settings)
+        self.apply_settings(settings, read_only=True, scratch=True)
 
         self.config = config
         self.draw()
